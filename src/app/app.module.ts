@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { NgRedux, NgReduxModule } from '@angular-redux/store';
 import { IAppState, rootReducer, INITIAL_STATE } from './shared/store';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule, MatMenuModule, MatIconModule } from '@angular/material';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,7 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgReduxModule
+    NgReduxModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
